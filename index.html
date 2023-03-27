@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="contauner">
+      Loading...
+      <span class="contauner_span"></span>
+    </div>
+  </div>
+  <section class="container">
+    <header>
+      <div class="header_logo">
+        <img src="./images/Group.svg" alt="logo">
+        <h1 class="header_title">Weather</h1>
+      </div>
+      <form>
+        <fieldset>
+          <select id="city-select">
+            <option value="Бишкек">Бишкек</option>
+            <option value="Ош">Ош</option>
+            <option value="Каракол">Каракол</option>
+            <option value="Талас">Талас</option>
+            <option value="Нарын">Нарын</option>
+            <option value="Баткен">Баткен</option>
+            <option value="Жалал-Абад">Жалал-Абад</option>
+            <option value="Балыкчы">Балыкчы</option>
+            <option value="Чолпон-Ата">Чолпон-Ата</option>
+          </select>
+        </fieldset>
+      </form>
+    </header>
+    <main>
+      <div class="day">
+        <div class="main_info">
+          <div class="main_info_container">
+            <div class="block_day">
+              <div class="day_info">
+                <h2 class="temper"></h2>
+                <h3 class="">Сегодня</h3>
+              </div>
+              <img src="./images/sun.svg" alt="sun">
+            </div>
+            <div class="info_city">
+              <h4>Время: <span class="time"></span></h4>
+              <h4>Город: <span class="time_zone">Бишкек</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <img class="cloud" src="./images/cloud.png" alt="cloud">
+          <div class="info_container">
+            <div class="info_temp">
+              <div class="ellipse">
+                <img src="./images/temp.svg" alt="temp">
+              </div>
+              <h5 class="info_title">Температура</h5>
+              <h5 class="info_data"> <span class="feels_like"></span></h5>
+            </div>
+            <div class="info_temp">
+              <div class="ellipse">
+                <img src="./images/davlenie.svg" alt="temp">
+              </div>
+              <h5 class="info_title">Давление</h5>
+              <h5 class="info_data"><span class="pressure"></span> </h5>
+            </div>
+            <div class="info_temp">
+              <div class="ellipse">
+                <img src="./images/osadki.svg" alt="temp">
+              </div>
+              <h5 class="info_title">Осадки</h5>
+              <h5 class="info_data"><span class="description"></span></h5>
+            </div>
+            <div class="info_temp">
+              <div class="ellipse">
+                <img src="./images/wind.svg" alt="temp">
+              </div>
+              <h5 class="info_title">Ветер</h5>
+              <h5 class="info_data"><span class="wind"></span> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="week">
+      </div>
+    </main>
+  </section>
+</body>
+<script src="./script.js"> </script>
+
+</html>
